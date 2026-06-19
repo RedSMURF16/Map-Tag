@@ -30,7 +30,7 @@ public plugin_init()
     g_cvarColor         = register_cvar("maptag_beam_color", "212 175 55 255")
     g_cvarColorRandom   = register_cvar("maptag_beam_color_random", "0")
     g_cvarColorFreq     = register_cvar("maptag_beam_color_frequency", "1.0")
-    g_cvarColorMode     = register_cvar("maptag_beam_color_mode", "0") // 0 - Unified, 1 - Random
+    g_cvarColorMode     = register_cvar("maptag_beam_color_mode", "0")          // 0 - Unified, 1 - Random
 
     cvarCache()
     hook_cvar_change(g_cvarLine,        "cvarUpdate")
