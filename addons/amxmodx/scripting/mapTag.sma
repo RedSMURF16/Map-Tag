@@ -4,7 +4,7 @@
 #include <hamsandwich>
 #include <xs>
 
-#define MAPTAG_TAG "^4[MAPTAG]"
+#define MAPTAG_TAG "^4[MAPTAG]^1"
 #define MAX_POINTS 512
 
 new g_cvarLine, g_cvarWidth, g_cvarNoise, g_cvarColor, g_cvarColorRandom, g_cvarColorFreq, g_cvarColorMode,
@@ -18,7 +18,7 @@ new Float:g_fNextRandom
 
 public plugin_init()
 {
-    register_plugin("Map Line", "1.0", "RedSMURF")
+    register_plugin("Map Tag", "1.0", "RedSMURF")
 
     register_clcmd("+drawline", "cmdDrawLine", ADMIN_RCON)
     register_clcmd("-drawline", "cmdDrawLine", ADMIN_RCON)
@@ -98,7 +98,7 @@ public cmdSave(id, iLevel, iCid)
         fputs(iFile, szData)
     }
 
-    client_print_color(id, id, "%s %s ^4%s", id, MAPTAG_TAG, "MapTag data saved in", szFile)
+    client_print_color(id, id, "%s %s ^4%s", MAPTAG_TAG, "MapTag data saved in", szFile)
     fclose(iFile)
 
     return PLUGIN_HANDLED
