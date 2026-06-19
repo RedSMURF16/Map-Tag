@@ -1,3 +1,32 @@
+/*
+*
+*	MapTag by RedSMURF
+*
+*
+*	Description:
+*   This plugin lets admins draw freehand lines on the map using beams, perfect for signatures, tags, or simple shapes.
+*   Holding +drawline while moving draws a continuous stroke; releasing and pressing again starts a new stroke without
+*   connecting it to the previous one. Drawings are saved per map and automatically loaded on every map start.
+*
+*	Cvars:
+*		mapline_line                            "Enable/disable line rendering (0/1)."
+*		mapline_beam_width                      "Beam width."
+*		mapline_beam_noise                      "Beam noise/jitter."
+*		mapline_beam_color                      "Beam color (R G B A)."
+*		mapline_beam_color_random               "Enable random color cycling (0/1)."
+*		mapline_beam_color_frequency            "Frequency (seconds) of random color change."
+*		mapline_beam_color_mode                 "Color mode (0 - Unified, 1 - Random per segment)."
+*
+*	Commands:
+*       +drawline / -drawline       "Hold to draw, release to lift the pen."
+*       mapline_clear                "Clears the current drawing."
+*       mapline_save                 "Saves the current drawing to file."
+*
+*	Changelog:
+*       v1.0: Initial release.
+*
+*/
+
 #include <amxmodx>
 #include <amxmisc>
 #include <fakemeta>
