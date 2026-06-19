@@ -20,8 +20,8 @@ public plugin_init()
 {
     register_plugin("Map Tag", "1.0", "RedSMURF")
 
-    register_clcmd("+drawline", "cmdDrawLine", ADMIN_RCON)
-    register_clcmd("-drawline", "cmdDrawLine", ADMIN_RCON)
+    register_clcmd("+maptag", "cmdMapTag", ADMIN_RCON)
+    register_clcmd("-maptag", "cmdMapTag", ADMIN_RCON)
     register_clcmd("maptag_clear", "cmdClear", ADMIN_RCON)
     register_clcmd("maptag_save", "cmdSave", ADMIN_RCON)
     g_cvarLine          = register_cvar("maptag_line", "1")
@@ -51,7 +51,7 @@ public plugin_precache()
     g_iBeamSprite = precache_model(g_szBeamSprite)
 }
 
-public cmdDrawLine(id, iLevel, iCid)
+public cmdMapTag(id, iLevel, iCid)
 {
 	if( !cmd_access(id, iLevel, iCid, 1)
     || !is_user_alive(id) )
