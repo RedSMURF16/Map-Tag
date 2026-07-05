@@ -33,7 +33,7 @@
 #include <hamsandwich>
 #include <xs>
 
-#define MAPTAG_TAG "^4[MAPTAG]^1"
+#define MAPTAG_TAG "^4[MAP TAG]^1"
 #define MAX_POINTS 512
 
 new g_cvarLine, g_cvarWidth, g_cvarNoise, g_cvarColor, g_cvarColorRandom, g_cvarColorFreq, g_cvarColorMode,
