@@ -13,7 +13,10 @@ Drawings are saved per map and automatically loaded on every map start.
 - Configurable beam width, noise, color, and color mode (unified or random per segment)
 - Optional color cycling on a set frequency
 - Drawings persist across map changes via a per-map save file
-- [color=red]Requires AMX Mod X 1.9.0+[/color]
+
+## 📋 Requirements
+- ReGameDLL
+- AMX Mod X 1.10+
 
 ## 💬 Commands
 - `+drawline / -drawline` - Hold to draw, release to lift the pen.
