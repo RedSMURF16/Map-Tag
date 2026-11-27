@@ -1,7 +1,7 @@
 <h1 align="center">Map Tag</h1>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=48VfeNLRWZc"><img src="https://img.youtube.com/vi/48VfeNLRWZc/maxresdefault.jpg" alt="Watch on YouTube" width="600"></a>
+  <img src="images/demo.gif" alt="Map Tag">
 </p>
 
 ## 📝 Description
